@@ -31,8 +31,8 @@ async function fetchProduct() {
     // Generate product card HTML
     productInfoDiv.style.display = "block";
     productInfoDiv.innerHTML = `
-      <img src="${image}" alt="${name}" onerror="this.src='placeholder.png';" />
       <h2>${name}</h2>
+      <p><strong>Image URL:</strong> <a href="${image}" target="_blank">${image}</a></p>
       <p>Type of Metal: ${metal}</p>
       <p>Price: $${price}</p>
     `;
